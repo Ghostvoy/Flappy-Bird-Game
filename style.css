@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
+.background{
+    height: 640px;
+    width: 400px;
+    position: absolute;
+    left: 480px;
+}
+.sky{
+    background-image: url(fb-game-background.png);
+    height: 540px;
+    width: 400px;
+    position: absolute;
+    background-size: cover;
+}
+.ground{
+    background-image: url(bottom-background.png);
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top: 540px;
+    z-index : +1;
+    background-size: cover;
+}
+.bird{
+    background-image: url(flappy-bird.png);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-size: cover;
+}
+.obstacle{
+    height: 250px;
+    width: 50px;
+    background-image:url(flappybird-pipe.png);
+    position: absolute;
+}
+.topObstacle{
+    height: 250px;
+    width: 50px;
+    background-image:url(flappybird-pipe.png);
+    position: absolute;
+    transform: rotate(180deg);
+}
+.border_left{
+    height: 640px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    z-index: +2;
+    left: 400px;
+}
+.border_right{
+    height: 640px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    z-index: +2;
+    left: 880px;
+}
+.border_top{
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    z-index: +2;
+    top: -50px;
+    left: -50px;
+}
+
+#message{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    position: absolute;
+    z-index: +1;
+    margin-left: 95px;
+    background-color: white;
+}
+
+#score{
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    z-index: +1;
+    left: 15px;
+}
